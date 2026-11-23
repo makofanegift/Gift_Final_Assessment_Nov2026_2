@@ -2,14 +2,16 @@ package Steps;
 
 import io.cucumber.java.en.*;
 
-public class RegistrationSteps {
+public class RegistrationSteps extends Base{
 
     @Given("I am on home page")
     public void i_am_on_home_page() {
+        homePage.verifyHomePageIsDisplayed();
 
     }
     @And("I click login button")
     public void i_click_login_button() {
+        homePage.clickLoginButton();
 
     }
     @And("I click on the Sign Up Here hyperlink")
