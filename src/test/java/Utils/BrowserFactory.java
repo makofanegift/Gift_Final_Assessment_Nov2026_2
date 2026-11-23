@@ -17,7 +17,7 @@ public class BrowserFactory {
     public static WebDriver startBrowser(String browserChoice, String url){
 
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
+        //options.addArguments("--headless");
 
         switch (browserChoice.toLowerCase(Locale.ROOT)) {
             case "chrome":
